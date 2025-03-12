@@ -10,7 +10,7 @@ key =  b'P3ihf_nJ-X6bwoq4SxLReEteehjHxg9HwBXZdbM-ZSE='  # Замените на 
 cipher = Fernet(key)
 
 # Запись аудио
-def record_audio(duration=5, sample_rate=44100):
+def record_audio(duration=15, sample_rate=44100):
     print("Запись началась...")
     try:
         audio_data = sd.rec(int(duration * sample_rate), samplerate=sample_rate, channels=1)
@@ -55,7 +55,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Запись и отправка аудио
-    audio_data = record_audio(duration=3)
+    audio_data = record_audio(duration=13)
     if audio_data:
         send_audio_data(args.ip, args.port, audio_data, args.interval)
     else:
