@@ -4,4 +4,4 @@ from cryptography.fernet import Fernet
 key = Fernet.generate_key()
 print("Сгенерированный ключ:", key)
 
-# Сохраните этот ключ и используйте его в audio_sender.py и audio_receiver.py
+# Сохраняем этот ключ и используйте его в audio_sender.py и audio_receiver.py
