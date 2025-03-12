@@ -6,7 +6,7 @@ import argparse
 import time
 
 # Генерация ключа (должен быть одинаковым на стороне отправителя и получателя)
-key =  b'P3ihf_nJ-X6bwoq4SxLReEteehjHxg9HwBXZdbM-ZSE='  # Замените на реальный ключ
+key =  b'P3ihf_nJ-X6bwoq4SxLReEteehjHxg9HwBXZdbM-ZSE='  # Замена на реальный ключ
 cipher = Fernet(key)
 
 # Запись аудио
