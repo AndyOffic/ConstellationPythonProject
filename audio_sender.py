@@ -55,7 +55,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Запись и отправка аудио
-    audio_data = record_audio(duration=10)
+    audio_data = record_audio(duration=7)
     if audio_data:
         send_audio_data(args.ip, args.port, audio_data, args.interval)
     else:
